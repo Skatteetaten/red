@@ -1,6 +1,6 @@
 = Red
 
-<img align="right" src="https://vignette.wikia.nocookie.net/muppet/images/3/39/Red_Fraggle.jpg/revision/latest/scale-to-width-down/280?cb=20121231163106" />
+<img align="right" src="https://vignette.wikia.nocookie.net/muppet/images/3/39/Red_Fraggle.jpg/revision/latest/scale-to-width-down/280?cb=20121231163106">
 
 Red is a service that provides status for Routes. External network solutions can ask Red if a route is available in the OpenShift clusterj
 
