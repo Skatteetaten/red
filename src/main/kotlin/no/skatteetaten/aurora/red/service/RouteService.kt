@@ -1,16 +1,14 @@
 package no.skatteetaten.aurora.red.service
 
-import no.skatteetaten.aurora.red.service.openshift.OpenShiftResourceClient
+import io.fabric8.openshift.api.model.Route
+import io.fabric8.openshift.client.DefaultOpenShiftClient
 import org.springframework.stereotype.Component
 
-data class Route(val namespace: String, val name: String)
-
 @Component
-class RouteService(val openShiftResourceClient: OpenShiftResourceClient) {
+class RouteService(val client: DefaultOpenShiftClient) {
 
     fun findRoute(namespace: String, name: String): Route? {
 
-        val responseEntity = openShiftResourceClient.get("/namespaces/${namespace}/routes/${name}")
-        return responseEntity?.let { Route(namespace, name) }
+        return client.routes().inNamespace(namespace).withName(name).get()
     }
 }
