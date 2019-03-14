@@ -27,7 +27,7 @@ apply(plugin = "spring-cloud-contract")
 dependencies {
     implementation("io.fabric8:openshift-client:4.1.3")
     testImplementation("com.fkorotkov:kubernetes-dsl:2.0.1")
-    testImplementation("com.squareup.okhttp3:mockwebserver:3.13.1")
+    testImplementation("com.squareup.okhttp3:mockwebserver:3.14.0")
 
     implementation("org.springframework.boot:spring-boot-starter-hateoas")
     implementation("org.springframework.boot:spring-boot-starter-web")
