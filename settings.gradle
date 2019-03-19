@@ -1,1 +1,11 @@
-rootProject.name = 'red'
+pluginManagement {
+  repositories {
+    maven {
+      url 'http://aurora/nexus/content/repositories/gradle-plugins/'
+    }
+    gradlePluginPortal()
+    maven { url "http://aurora/nexus/content/groups/public" }
+  }
+}
+rootProject.name = artifactId
+

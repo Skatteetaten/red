@@ -8,9 +8,6 @@ openshift:
     cluster: utv
     url: https://${openshift.cluster}-master.paas.skead.no:8443
 
-red:
-    openshift:
-        tokenLocation: /var/run/secrets/kubernetes.io/serviceaccount/token
 
 spring:
   profiles:
@@ -19,14 +16,13 @@ spring:
 logging:
   level:
     no.skatteetaten: INFO
-    ske.aurora.filter: INFO
     org:
-      jboss: INFO
+      jboss: WARN
       hibernate: WARN
       springframework: WARN
       apache:
-        catalina: INFO
-        velocity: INFO
+        catalina: WARN
+        velocity: WARN
 ---
 spring:
     profiles: local
