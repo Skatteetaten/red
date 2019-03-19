@@ -16,14 +16,13 @@ spring:
 logging:
   level:
     no.skatteetaten: INFO
-    ske.aurora.filter: INFO
     org:
-      jboss: INFO
+      jboss: WARN
       hibernate: WARN
       springframework: WARN
       apache:
-        catalina: INFO
-        velocity: INFO
+        catalina: WARN
+        velocity: WARN
 ---
 spring:
     profiles: local
