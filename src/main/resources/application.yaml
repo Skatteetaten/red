@@ -8,9 +8,6 @@ openshift:
     cluster: utv
     url: https://${openshift.cluster}-master.paas.skead.no:8443
 
-red:
-    openshift:
-        tokenLocation: /var/run/secrets/kubernetes.io/serviceaccount/token
 
 spring:
   profiles:
