@@ -6,6 +6,21 @@ Red is a service that provides status for Routes. External network solutions can
 
 The component is named after the Red Fraggle (http://muppet.wikia.com/wiki/Red_Fraggle). Logo is sourced from Fraggle wiki
 
+## Setup
+ 
+ In order to use this project you must set repositories in your `~/.gradle/init.gradle` file
+ 
+     allprojects {
+         ext.repos= {
+             mavenCentral()
+             jcenter()
+         }
+         repositories repos
+         buildscript {
+          repositories repos
+         }
+     }
+
 ## How to start
 Run the main class in your Editor. The application run as the currently logged in user to your OpenShift cluster.
 
