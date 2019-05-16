@@ -21,6 +21,12 @@ The component is named after the Red Fraggle (http://muppet.wikia.com/wiki/Red_F
          }
      }
 
+We use a local repository for distributionUrl in our gradle-wrapper.properties, you need to change it to a public repo in order to use the gradlew command. `../gradle/wrapper/gradle-wrapper.properties`
+
+    <...>
+    distributionUrl=https\://services.gradle.org/distributions/gradle-<version>-bin.zip
+    <...>
+
 ## How to start
 Run the main class in your Editor. The application run as the currently logged in user to your OpenShift cluster.
 
